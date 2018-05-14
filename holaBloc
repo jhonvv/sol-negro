@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+
+<title> mi pagina web personal</title>
+</HEAD>
+</body>
+<H1>NITZA CORRALES SOLIS</H1>
+<form>
+<table border="2">
+<tr><td>
+digitar codigo
+
+</td><td>
+<input type="text">
+</td></tr><tr><td>
+digitar nombre
+</td><td>
+<input type="text">
+</td></tr><tr><td>
+digitar Apellido
+</td><td>
+<input type"text">
+</br></td></tr><tr><td>
+sexo
+</td><td>
+<input type="radio">varon
+<input type="radio">mujer
+</br></td>
+</tr><tr><td>
+deporte de intercarrera
+</td><td>
+<input type="checkbox">voley
+<input type="checkbox">butbol
+<input type="checkbox">basquet
+<input type="checkbox">ajedres
+<input type="checkbox">tenis de mesa
+</br></td>
+</tr><tr><td>
+lugar de nacimiento
+<select>
+<option>abancay</option>
+<option>circa</option>
+<option>lambrama</option>
+</select>
+</br>
+</table>
+<input type ="button"value="enviar">
+</table>
+</form>
+<body>
+</HTML>
