@@ -1,0 +1,165 @@
+<html>
+<head>
+  <title>operaciones con numeros</title>
+  
+</head>
+<body>
+
+<script languaje="javascrip">
+    var nro1;
+    var nro2;
+	var nro3;
+	var nro4;
+	var nro5;
+	var altura;
+	var base;
+	
+    var resultado;
+    var opc;
+	var sum=0;
+	var s=0;
+	var su=0;
+	var sumn=0;
+	var vuma=0;
+	
+	
+	var m=0;
+	var ma=0;
+	var may=0;
+	var mayo=0;
+	var mayorr=0;
+	
+	var impares;
+	var pares;
+	var mayor;
+	var menor;
+   function calcular()
+   {
+    nro1=parseInt(document.formulario2.numro1.value);
+	nro2=parseInt(document.formulario2.numro2.value);
+	nro3=parseInt(document.formulario2.numro3.value);
+	nro4=parseInt(document.formulario2.numro4.value);
+	nro5=parseInt(document.formulario2.numro5.value);
+	altura=parseInt(document.formulario2.altu.value);
+	base=parseInt(document.formulario2.bas.value);
+	opc=document.formulario2.opciones.value;
+	
+	
+	if(nro1>nro2 && nro1>nro3 && nro1>nro4 && nro1>nro5)
+	{
+	mayor=nro1;
+	}else {
+	   if(nro2>nro1 && nro2>nro3 && nro2>nro4 && nro2>nro5)
+	   {
+	    mayor=nro2;
+	   }  else {
+	       if(nro3>nro1 && nro3>nro2 && nro3>nro4 && nro3>nro5)
+		   {
+		    mayor=nro3;
+		   }else {
+		    if(nro4>nro1 && nro4>nro2 && nro4>nro3 && nro4>nro5)
+			{
+			mayor=nro4;
+			}else {
+			mayor=nro5;
+			}
+		   }
+	   }
+	}
+	
+	
+	if(nro1<nro2 && nro1<nro3 && nro1<nro4 && nro1<nro5)
+	{
+	menor=nro1;
+	}else {
+	   if(nro2<nro1 && nro2<nro3 && nro2<nro4 && nro2<nro5)
+	   {
+	    menor=nro2;
+	   }  else {
+	       if(nro3<nro1 && nro3<nro2 && nro3<nro4 && nro3<nro5)
+		   {
+		    menor=nro3;
+		   }else {
+		    if(nro4<nro1 && nro4<nro2 && nro4<nro3 && nro4<nro5)
+			{
+			menor=nro4;
+			}else {
+			menor=nro5;
+			}
+		   }
+	   }
+	}
+	
+	                    if(nro1%2!=0)
+	                       {
+						   sum=sum+1
+						   }else {
+						   m=m+1;
+						   }
+						 if(nro2%2!=0)
+	                       {
+						   s=s+1
+						   }else {
+						   ma=ma+1;
+						   }
+						 if(nro3%2!=0)
+	                       {
+						   su=su+1
+						   } else {
+						   may=may+1;
+						   }
+						  if(nro4%2!=0)
+	                       {
+						   sumn=sumn+1
+						   }else {
+						   mayo=mayo+1;
+						   }
+						  if(nro5%2!=0)
+	                       {
+						   vuma=vuma+1
+						   } else {
+						   mayorr=mayorr+1;
+						   }
+	impares=sum+s+su+sumn+vuma;
+	pares=m+ma+may+mayo+mayorr;
+	switch(opc)
+	{
+	case "1": resultado = (nro1+nro2+nro3+nro4+nro5)/5;break;
+	case "2": resultado= impares;break;
+	case "3": resultado= pares;break;
+	case "4": resultado= mayor;break;
+	case "5": resultado= menor;break;
+	case "6": resultado= (base*altura)/2;break;
+	}
+	document.formulario2.result.value=resultado;
+
+}	
+</script>
+
+  <h2>operaciones</h2>
+  <Form name="formulario2">
+  digitar numero 1: <input type = "text" id = "numro1" /><br/>
+  digitar numer 2 : <input type = "text" id ="numro2" /><br/>
+  digitar numer 3 : <input type = "text" id ="numro3" /><br/>
+  digitar numer 4 : <input type = "text" id ="numro4" /><br/>
+  digitar numer 5 : <input type = "text" id ="numro5" /><br/>
+  
+  digitar altura del triangulo : <input type = "text" id ="altu" /><br/>
+  digitar digitar la base del triangulo : <input type = "text" id ="bas" /><br/>
+  
+  
+  seleccionar operaciones:
+  <select name ="opciones">
+     <option value = "1">promedio de 5 numeros</option>
+	 <option value = "2">numero impares de 5 numeros</option>
+	 <option value = "3">numero pares de 5 numeros</option>
+	 <option value = "4">numero mayor de 5 mumeros</option>
+	 <option value = "5">numero menor de 5 numeros</option>
+	 <option value = "6">Area de un triangulo</option>
+	 
+  </select>  <br/>
+  Resultados:   <input type="text" id="result" />  <br/>
+    <input type="button" value= "Calcularalcular" onclick ="calcular()">
+	  </form>
+</body>
+</html>
